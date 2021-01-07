@@ -1,0 +1,268 @@
+/*-----------------------------------------------------------------------------------
+
+	Template Name: Personal Portfolio
+	Template URI: 
+	Description: Profile related template
+	Author: Jhankar Mahbub
+	Author URI: http://www.bappy.xyz
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+	1. Typography
+	2. Header Area
+		2.1 Half Width
+	3. Biography Area
+	4. Latest Work Area
+	5. Subscribe Area
+	6. Client Area
+	7. Footer Area
+
+-----------------------------------------------------------------------------------*/
+
+
+/************** 1. Typography ************************/
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 35px;
+	font-weight: 300;
+	text-transform: capitalize;
+	line-height: 50px;
+}
+
+h2 {
+	font-size: 40px;
+	color: #1f2227;
+	font-weight: bold;
+	text-transform: capitalize;
+	line-height: 50px;
+}
+
+h1 .text-highlight {
+	display: block;
+	
+	font-size: 40px;
+	font-weight: bold;
+	color: #ED4C67;
+}
+
+p {
+	color: #767676;
+	margin-bottom: 40px;
+	line-height: 25px;
+}
+
+.button{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #ED4C67, tomato);
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: 300ms;
+}
+
+.button:hover {
+    background-image: linear-gradient(45deg, white, lightgray);
+    color: #ED4C67;
+    border: 1px solid #ED4C67;
+}
+
+/****** 2. Header Area *******/
+header {
+	background: url('../images/header-bg.png') top left no-repeat;
+	background-size: cover;
+	padding: 100px 0 200px 0;
+	overflow: hidden;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/****** 2.1 Half Width *******/
+.half-width {
+	width: 40%;
+	margin-left: 10%;
+	float: left;
+}
+
+.half-width:last-child {
+	margin-left: 0;
+}
+
+.half-width img {
+	width: 100%;
+	margin-left: 20px;
+}
+
+.header-text-area{
+	margin-top: 100px;	
+}
+
+/****** 3. Biography Area *******/
+.biography-area {
+	background: url('../images/biography-bg.png') top  no-repeat;
+	background-size: cover;
+	padding: 100px 0 200px 0;
+	overflow: hidden;
+}
+
+.biography-text-area {
+	padding: 5%;	
+}
+
+/****** 4. Latest Work Area *******/
+.latest-work-area {
+	background: url('../images/latest-work-bg.png') center  no-repeat;
+	background-size: cover;
+	padding: 100px 0 200px 0;
+	overflow: hidden;
+}
+
+.latest-work-area h2 {
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.latest-work-area .template .design {
+	width: 30%;
+	float: left;
+	margin-right: 5%;
+}
+
+.latest-work-area .template .design:last-child {
+	margin-right: 0;
+}
+
+.latest-work-area .template .design img {
+	width: 100%;
+}
+
+/******* 5. Subscribe Area *******/
+
+.subscribe-area {
+	overflow: hidden;
+	background: url('../images/subscribe-bg.jpg') no-repeat;
+	background-size: cover;
+	padding: 200px 0;
+}
+
+.subscribe {
+	text-align: center;
+	margin-top: 200px;
+}
+
+.subscribe h3 {
+	color: white;
+	font-size: 38px;
+	margin-bottom: 30px;
+	text-transform: capitalize;
+}
+
+.subscribe form input[type="email"] {
+	width: 30%;
+	padding: 15px;
+	color: black;
+	font-size: 18px;
+	border: 1px solid transparent;
+	border-radius: 3px 0 0 3px;
+}
+
+.subscribe form button {
+	background-image: linear-gradient(90deg, #ED4C67, tomato);
+	margin: 0;
+	padding: 15.5px;
+	font-size: 18px;
+	color: white;
+	border: 1px solid transparent;
+	border-radius: 0 3px 3px 0;
+	margin-left: -4px;
+	transition: 300ms;
+}
+
+.subscribe form button:hover {
+	background-image: linear-gradient(45deg, white, lightgray);
+	cursor: pointer;
+	background-color: white;
+	color: #ED4C67;
+    border: 1px solid #ED4C67;
+}
+
+/****** 6. Client Area *******/
+.client-area {
+	background: url('../images/footer-bg.png') center no-repeat;
+	background-size: cover;
+	padding: 100px 0 100px 0;
+}
+
+.client-area h2 {
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.client-area .founder-text h4 {
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 22px;
+	color: #202529;
+}
+
+.client-area .founder-text h4 span {
+	display: block;
+	font-size: 14px;
+	margin-top: 10px;
+	color: #6f6f6f;
+	margin-bottom: 50px;
+}
+
+.client-area .founder-text p {
+	width: 50%;
+	margin: 0 auto;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	color: #202529;;
+}
+
+.client-area .message {
+	background-image: linear-gradient(90deg, #ED4C67, tomato);
+	width: 65%;
+	margin: 50px auto 50px;
+	padding: 50px 0;
+	border-radius: 5px;
+}
+
+.client-area .message p {
+	text-align: center;
+	margin: 0;
+	font-size: 20px;
+	text-transform: capitalize;
+	color: white;
+}
+
+.client-area .message h5 {
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+	font-size: 26px;
+	color: white;
+}
+
+/****** 7. Footer Area *******/
+footer p{
+	text-align: center;
+	font-size: 18px;
+}
